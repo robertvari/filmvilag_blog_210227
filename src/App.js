@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div className="App">
+    <div className="content-container">
       <h1>Filmvilág Blog</h1>
     </div>
   );
