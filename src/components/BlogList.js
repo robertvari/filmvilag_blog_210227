@@ -3,6 +3,7 @@ import BlogCard from "./BlogCard";
 import "./BlogList.css"
 
 function BlogList(props) {
+
     return (
         <div className="blog-list-container">
             <BlogCard/>

@@ -21,3 +21,7 @@ body {
   grid-gap: 10px;
   grid-template-columns: auto 200px;
 }
+
+h1 {
+  font-weight: 300;
+}

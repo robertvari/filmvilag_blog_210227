@@ -4,3 +4,20 @@
     padding: 10px;
     border-radius: 10px;
 }
+
+.blog-card-container img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-header{
+    margin-bottom: 20px;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
