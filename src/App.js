@@ -1,7 +1,13 @@
+import Header from "./components/Header";
+import BlogContent from "./components/BlogContent";
+import SidePanel from "./components/SidePanel";
+
 function App() {
   return (
     <div className="content-container">
-      <h1>Filmvilág Blog</h1>
+        <Header/>
+        <BlogContent/>
+        <SidePanel/>
     </div>
   );
 }
