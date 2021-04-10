@@ -1,8 +1,11 @@
 import React from 'react';
+import "./Header.css"
 
 function Header(props) {
     return (
-        <h1>Header</h1>
+        <div className="header-container">
+            <img src="https://m.blog.hu/fi/filmvilag/skins/classic/fejlec/eden6.jpg" alt=""/>
+        </div>
     );
 }
 
