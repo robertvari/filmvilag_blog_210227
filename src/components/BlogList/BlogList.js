@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import axios from "axios"
 import BlogCard from "./BlogCard";
-import "./BlogList.css"
+import "./styles/BlogList.css"
 
 function BlogList(props) {
-    const API_URL = "http://localhost:3001"
+    const API_URL = process.env.REACT_APP_API_URL
     const [post_list, set_post_list] = useState([])
 
     const fetch = () => {
@@ -23,7 +23,7 @@ function BlogList(props) {
     return (
         <div className="blog-list-container">
             {
-                post_list.map(post_data => <BlogCard data={post_data}/>)
+                post_list.map(post_data => <BlogCard key={post_data.id} data={post_data}/>)
             }
         </div>
     );

@@ -1,6 +1,6 @@
 import Header from "./components/Header";
-import BlogList from "./components/BlogList";
-import SidePanel from "./components/SidePanel";
+import BlogList from "./components/BlogList/BlogList";
+import SidePanel from "./components/SidePanel/SidePanel";
 
 function App() {
   return (
