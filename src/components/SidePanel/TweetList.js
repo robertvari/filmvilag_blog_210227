@@ -38,7 +38,7 @@ function TweetList(props) {
 
 
     return (
-        <div>
+        <div className="tweet-list-container">
             <h3>Tweets</h3>
             {
                 tweet_list.map(tweet_data => <TweetCard key={tweet_data.id} data={tweet_data}/>)
