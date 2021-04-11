@@ -1,5 +1,6 @@
 import React from 'react';
 import "./styles/BlogCard.css"
+import {Link} from "react-router-dom";
 
 
 function BlogCard(props) {
@@ -8,14 +9,18 @@ function BlogCard(props) {
     return (
         <div className="blog-card-container">
             <div className="card-header">
-                <h1>{title}</h1>
+                <Link to={`/posts/${id}`}>
+                    <h1>{title}</h1>
+                </Link>
             </div>
 
             <img src={image} alt=""/>
             <p>{summary}</p>
 
             <div className="card-footer">
-                <a href="">Tovább...</a>
+                <Link to={`/posts/${id}`}>
+                    Tovább...
+                </Link>
             </div>
         </div>
     );
